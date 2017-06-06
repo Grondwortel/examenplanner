@@ -14,6 +14,11 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+
+
+
+
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -176,6 +181,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        /*
+        * Backpack Service Providers...
+        */
+        Backpack\Base\BaseServiceProvider::class,
+        Backpack\CRUD\CrudServiceProvider::class,
 
     ],
 
